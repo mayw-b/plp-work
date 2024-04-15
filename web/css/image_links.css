@@ -1,0 +1,27 @@
+.container {
+    margin-top: 10%;
+}
+
+.img-area {
+    position: relative;
+    /* color: #fff; */
+}
+
+.img-area img {
+    width: 100%;
+    height: auto;
+}
+
+.img-text,
+.img-area::after {
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.img-area::after {
+    content: '';
+    height: 100%;
+    top: 0;
+    transition: 5s;
+}
