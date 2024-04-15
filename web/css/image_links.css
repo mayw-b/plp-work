@@ -25,3 +25,25 @@
     top: 0;
     transition: 5s;
 }
+
+.img-area:hover::after {
+    background: linear-gradient(to bottom, rgba(199,0,57,25) 0, rgba(199,0,57,.25) 25%,
+    rgba(199,0,57,.75) 75%), rgba(199, 0, 57, .95) 100%;
+}
+
+.img-text {
+    padding: 20px;
+    margin-bottom: 20px;
+    bottom: 0;
+    z-index: 1;
+    transform: translateY(145px);
+    transform: all .5s cubic-bezier(.13,.62,.81,.91) 0s;
+}
+
+.img-text h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.img-area:hover .img-text {
+    transform: translateY(0);
+}
